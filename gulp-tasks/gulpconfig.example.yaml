@@ -1,0 +1,20 @@
+#put me in the root dir as "gulpconfig.yaml"
+env: "prod" # dev | test | prod
+gulp:
+  font:
+    src:
+      - "./web/fonts/**/*"
+    dist: "./web/public/fonts/"
+  scss:
+    inputPaths:
+      - "node_modules"
+      - "web/scss"
+  js:
+    concat:
+      files:
+        - "./node_modules/jquery/dist/jquery.js"
+      dist: "./web/public/js/"
+assets:
+  src:
+    - "./web/scss/**/*"
+  dist: "./web/public/css/"
